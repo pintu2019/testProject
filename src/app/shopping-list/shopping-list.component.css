@@ -1,0 +1,15 @@
+.margin-all{
+    margin:10px;
+}
+.margin-top{
+    margin-top: 10px;;
+}
+.margin-top-md{
+    margin-top: 35px;;
+}
+.border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+.padding-all{
+    padding:10px;
+}

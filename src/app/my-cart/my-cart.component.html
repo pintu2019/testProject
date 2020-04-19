@@ -1,0 +1,32 @@
+<div class="container">
+    <div *ngFor="let data of result ,let ind = index">
+         <div class="row border-bottom padding-all ">
+              <div class="col-sm-3">
+                   <div class="row">
+                        <div class="col-sm-12">
+                             <img src="{{data.imageUrl}}" class="img-responsive" alt="{{data.productName}}">
+                        </div>
+                        <div class="col-sm-12">
+                             <h4 class="text-center">{{data.offerText}}% OFF</h4>
+                        </div>
+                   </div>
+
+              </div>
+              <div class="col-sm-9 margin-top-md">
+                   <div class="row">
+                        <div class="col-sm-12">
+                             <h3>{{data.brandName}}</h3>
+                             <h4>{{data.productName}}</h4>
+
+                        </div>
+                        <div class="col-sm-12">
+                             <p>Quantity:{{data.quantity}}</p>
+                             <p>Price:{{data.price |currency:'&#8360;'}}</p>
+                             <p>MRF:{{data.price-(data.price*data.offerText/100)|currency:'&#8360;'}}</p>
+                        </div>
+                   </div>
+              </div>
+         </div>
+    </div>
+
+</div>
